@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13168.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13147.4"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,8 +23,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yN3-Cy-UQl">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" zoomEnabled="NO" rotateEnabled="NO" pitchEnabled="NO" showsUserLocation="YES" showsCompass="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yN3-Cy-UQl">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="666"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWp-GM-5w8">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
@@ -47,7 +48,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Epo-IE-xHw">
-                                <rect key="frame" x="309" y="597" width="50" height="50"/>
+                                <rect key="frame" x="309" y="596" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="AMA-0e-ek2"/>
                                     <constraint firstAttribute="width" constant="50" id="d2u-7t-1Ej"/>
@@ -57,9 +58,12 @@
                                     <action selector="centerMapBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nxr-0k-x4g"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Lj-09-g2S">
-                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lj-09-g2S">
+                                <rect key="frame" x="0.0" y="666" width="375" height="1"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="snJ-r9-VdU"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,13 +71,13 @@
                             <constraint firstAttribute="trailing" secondItem="8Lj-09-g2S" secondAttribute="trailing" id="2Io-FO-f7b"/>
                             <constraint firstItem="kWp-GM-5w8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="5gH-GF-LFy"/>
                             <constraint firstItem="kWp-GM-5w8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="8e8-cp-AIL"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Epo-IE-xHw" secondAttribute="bottom" constant="20" id="EHc-9E-qRS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8Lj-09-g2S" secondAttribute="bottom" id="KSI-IH-B4f"/>
+                            <constraint firstItem="8Lj-09-g2S" firstAttribute="top" secondItem="Epo-IE-xHw" secondAttribute="bottom" constant="20" id="EEf-Cz-ITL"/>
                             <constraint firstItem="yN3-Cy-UQl" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="R85-GE-Vuf"/>
                             <constraint firstItem="kWp-GM-5w8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="V2J-NZ-qJ6"/>
                             <constraint firstItem="8Lj-09-g2S" firstAttribute="top" secondItem="yN3-Cy-UQl" secondAttribute="bottom" id="X1h-r0-grG"/>
                             <constraint firstItem="8Lj-09-g2S" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="YBO-Ec-3mK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Epo-IE-xHw" secondAttribute="trailing" constant="16" id="hNk-5T-CV2"/>
+                            <constraint firstAttribute="bottom" secondItem="8Lj-09-g2S" secondAttribute="bottom" id="hqw-Hn-aQ8"/>
                             <constraint firstItem="yN3-Cy-UQl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ioc-kU-xnF"/>
                             <constraint firstItem="yN3-Cy-UQl" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="q8P-1r-jH2"/>
                         </constraints>
@@ -81,6 +85,8 @@
                     </view>
                     <connections>
                         <outlet property="mapView" destination="yN3-Cy-UQl" id="2tb-T3-gig"/>
+                        <outlet property="pullUpView" destination="8Lj-09-g2S" id="6qb-OV-lS5"/>
+                        <outlet property="pullUpViewHeightConstraint" destination="snJ-r9-VdU" id="epj-zd-gGL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
