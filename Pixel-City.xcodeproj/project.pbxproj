@@ -13,6 +13,7 @@
 		EE53AC911F71944300FBEA1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE53AC8F1F71944300FBEA1D /* Main.storyboard */; };
 		EE53AC931F71944300FBEA1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE53AC921F71944300FBEA1D /* Assets.xcassets */; };
 		EE53AC961F71944300FBEA1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE53AC941F71944300FBEA1D /* LaunchScreen.storyboard */; };
+		EECE16951F72C6DB00513EC2 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE16941F72C6DB00513EC2 /* DroppablePin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		EE53AC921F71944300FBEA1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE53AC951F71944300FBEA1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE53AC971F71944300FBEA1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EECE16941F72C6DB00513EC2 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		EE53AC9E1F7194F000FBEA1D /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EECE16941F72C6DB00513EC2 /* DroppablePin.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE53AC8E1F71944300FBEA1D /* MapVC.swift in Sources */,
+				EECE16951F72C6DB00513EC2 /* DroppablePin.swift in Sources */,
 				EE53AC8C1F71944300FBEA1D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,7 +329,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -376,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
