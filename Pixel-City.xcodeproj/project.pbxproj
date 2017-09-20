@@ -15,6 +15,7 @@
 		EE53AC961F71944300FBEA1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE53AC941F71944300FBEA1D /* LaunchScreen.storyboard */; };
 		EECE16951F72C6DB00513EC2 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE16941F72C6DB00513EC2 /* DroppablePin.swift */; };
 		EECE16971F72DA3800513EC2 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE16961F72DA3800513EC2 /* PhotoCell.swift */; };
+		EECE16991F72F8AE00513EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE16981F72F8AE00513EC2 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EE53AC971F71944300FBEA1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EECE16941F72C6DB00513EC2 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 		EECE16961F72DA3800513EC2 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		EECE16981F72F8AE00513EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 		EE53ACA11F71951400FBEA1D /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				EECE16981F72F8AE00513EC2 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EECE16991F72F8AE00513EC2 /* Constants.swift in Sources */,
 				EECE16971F72DA3800513EC2 /* PhotoCell.swift in Sources */,
 				EE53AC8E1F71944300FBEA1D /* MapVC.swift in Sources */,
 				EECE16951F72C6DB00513EC2 /* DroppablePin.swift in Sources */,
