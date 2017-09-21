@@ -232,7 +232,7 @@ extension MapVC: CLLocationManagerDelegate {
 	}
 }
 
-extension MapVC: UICollectionViewDelegate, UICollectionViewDataSource {
+extension MapVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 	func numberOfSections(in collectionView: UICollectionView) -> Int {
 		return 1
 	}
@@ -246,6 +246,7 @@ extension MapVC: UICollectionViewDelegate, UICollectionViewDataSource {
 		if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PHOTO_CELL, for: indexPath) as? PhotoCell {
 			let photo = photoInfoArray[indexPath.row]
 			let imageView = UIImageView(image: photo.image)
+			imageView.adjustsImageSizeForAccessibilityContentSizeCategory = true
 			cell.addSubview(imageView)
 			return cell
 		} else {
@@ -260,7 +261,6 @@ extension MapVC: UICollectionViewDelegate, UICollectionViewDataSource {
 		popVC.initData(forPhoto: selectedPhoto)
 		present(popVC, animated: true)
 	}
-
 }
 
 extension MapVC: UIViewControllerPreviewingDelegate {
