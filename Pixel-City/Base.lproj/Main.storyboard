@@ -10,6 +10,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
             <string>AvenirNext-DemiBold</string>
         </array>
     </customFonts>
@@ -54,7 +55,7 @@
                                 </constraints>
                                 <state key="normal" image="locationButton"/>
                                 <connections>
-                                    <action selector="centerMapBtnWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nxr-0k-x4g"/>
+                                    <action selector="centerMapBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BeH-XV-WG0"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Lj-09-g2S">
@@ -103,13 +104,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kh1-6B-y0G">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zye-2I-H5u">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zye-2I-H5u" customClass="RoundedView" customModule="Pixel_City" customModuleProvider="target">
                                 <rect key="frame" x="87" y="622" width="200" height="25"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double-tap to dismiss" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VCp-31-OA9">
                                         <rect key="frame" x="14.5" y="1" width="172.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -120,14 +121,28 @@
                                     <constraint firstAttribute="height" constant="25" id="box-zu-CBm"/>
                                     <constraint firstAttribute="width" constant="200" id="t4L-Lr-PQ5"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My cool photo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikN-xl-vMx">
+                                <rect key="frame" x="16" y="569" width="343" height="33"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="zye-2I-H5u" firstAttribute="top" secondItem="ikN-xl-vMx" secondAttribute="bottom" constant="20" id="7Ok-3e-kcf"/>
                             <constraint firstItem="Kh1-6B-y0G" firstAttribute="leading" secondItem="uqw-LJ-cpO" secondAttribute="leading" id="GaH-Yf-iI0"/>
+                            <constraint firstItem="ikN-xl-vMx" firstAttribute="leading" secondItem="uqw-LJ-cpO" secondAttribute="leading" constant="16" id="KWe-lk-ogw"/>
                             <constraint firstItem="uqw-LJ-cpO" firstAttribute="bottom" secondItem="zye-2I-H5u" secondAttribute="bottom" constant="20" id="Xet-xw-Xxe"/>
                             <constraint firstItem="Kh1-6B-y0G" firstAttribute="trailing" secondItem="uqw-LJ-cpO" secondAttribute="trailing" id="fWR-82-uiq"/>
                             <constraint firstItem="zye-2I-H5u" firstAttribute="centerX" secondItem="bkl-ia-pAi" secondAttribute="centerX" id="iua-vM-4ps"/>
+                            <constraint firstItem="uqw-LJ-cpO" firstAttribute="trailing" secondItem="ikN-xl-vMx" secondAttribute="trailing" constant="16" id="lfR-vJ-g8S"/>
                             <constraint firstItem="Kh1-6B-y0G" firstAttribute="bottom" secondItem="uqw-LJ-cpO" secondAttribute="bottom" id="t7e-TQ-yOd"/>
                             <constraint firstItem="Kh1-6B-y0G" firstAttribute="top" secondItem="bkl-ia-pAi" secondAttribute="top" id="xRT-jX-I7u"/>
                         </constraints>
@@ -135,6 +150,7 @@
                     </view>
                     <connections>
                         <outlet property="popImageView" destination="Kh1-6B-y0G" id="aJU-Fb-BvD"/>
+                        <outlet property="titleLbl" destination="ikN-xl-vMx" id="7MD-xu-Zsk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PkE-zq-kC7" userLabel="First Responder" sceneMemberID="firstResponder"/>

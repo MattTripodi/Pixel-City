@@ -14,6 +14,9 @@
 		EE53AC931F71944300FBEA1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE53AC921F71944300FBEA1D /* Assets.xcassets */; };
 		EE53AC961F71944300FBEA1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE53AC941F71944300FBEA1D /* LaunchScreen.storyboard */; };
 		EEB216BB1F74235D00BBB5B1 /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB216BA1F74235D00BBB5B1 /* PopVC.swift */; };
+		EEB216BD1F742F0000BBB5B1 /* PhotoInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB216BC1F742F0000BBB5B1 /* PhotoInfoModel.swift */; };
+		EEB216C01F742F5500BBB5B1 /* PhotoServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB216BF1F742F5500BBB5B1 /* PhotoServices.swift */; };
+		EEB216C21F7435CE00BBB5B1 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB216C11F7435CE00BBB5B1 /* RoundedView.swift */; };
 		EECE16951F72C6DB00513EC2 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE16941F72C6DB00513EC2 /* DroppablePin.swift */; };
 		EECE16971F72DA3800513EC2 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE16961F72DA3800513EC2 /* PhotoCell.swift */; };
 		EECE16991F72F8AE00513EC2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EECE16981F72F8AE00513EC2 /* Constants.swift */; };
@@ -31,6 +34,9 @@
 		EE53AC951F71944300FBEA1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EE53AC971F71944300FBEA1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEB216BA1F74235D00BBB5B1 /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
+		EEB216BC1F742F0000BBB5B1 /* PhotoInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoInfoModel.swift; sourceTree = "<group>"; };
+		EEB216BF1F742F5500BBB5B1 /* PhotoServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoServices.swift; sourceTree = "<group>"; };
+		EEB216C11F7435CE00BBB5B1 /* RoundedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		EECE16941F72C6DB00513EC2 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 		EECE16961F72DA3800513EC2 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		EECE16981F72F8AE00513EC2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -86,6 +92,7 @@
 		EE53AC8A1F71944300FBEA1D /* Pixel-City */ = {
 			isa = PBXGroup;
 			children = (
+				EEB216BE1F742F4100BBB5B1 /* Services */,
 				EE53ACA11F71951400FBEA1D /* Utilities */,
 				EE53ACA01F71950600FBEA1D /* Extensions */,
 				EE53AC9F1F7194F700FBEA1D /* Model */,
@@ -114,6 +121,7 @@
 			children = (
 				EECE16941F72C6DB00513EC2 /* DroppablePin.swift */,
 				EECE16961F72DA3800513EC2 /* PhotoCell.swift */,
+				EEB216C11F7435CE00BBB5B1 /* RoundedView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,6 +129,7 @@
 		EE53AC9F1F7194F700FBEA1D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EEB216BC1F742F0000BBB5B1 /* PhotoInfoModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -138,6 +147,14 @@
 				EECE16981F72F8AE00513EC2 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		EEB216BE1F742F4100BBB5B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EEB216BF1F742F5500BBB5B1 /* PhotoServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +281,11 @@
 			files = (
 				EEB216BB1F74235D00BBB5B1 /* PopVC.swift in Sources */,
 				EECE16991F72F8AE00513EC2 /* Constants.swift in Sources */,
+				EEB216C21F7435CE00BBB5B1 /* RoundedView.swift in Sources */,
 				EECE16971F72DA3800513EC2 /* PhotoCell.swift in Sources */,
 				EE53AC8E1F71944300FBEA1D /* MapVC.swift in Sources */,
+				EEB216C01F742F5500BBB5B1 /* PhotoServices.swift in Sources */,
+				EEB216BD1F742F0000BBB5B1 /* PhotoInfoModel.swift in Sources */,
 				EECE16951F72C6DB00513EC2 /* DroppablePin.swift in Sources */,
 				EE53AC8C1F71944300FBEA1D /* AppDelegate.swift in Sources */,
 			);
